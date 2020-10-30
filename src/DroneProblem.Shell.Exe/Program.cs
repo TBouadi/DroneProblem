@@ -19,8 +19,6 @@
         private static async Task Main(string[] args)
         {
             var service = new CsvService(FileRepository.Instance);
-
-            var a = service.GetTubeStations();
             var dispatcher = new Dispatcher(service);
             dispatcher.Init();
 
